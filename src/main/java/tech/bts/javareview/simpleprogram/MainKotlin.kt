@@ -1,6 +1,8 @@
 package tech.bts.javareview.simpleprogram
 
-    fun main(args: Array<String>) {
+import tech.bts.javareview.simpleprogram.classes.MathUtilKotlin
+
+fun main(args: Array<String>) {
 
         println("Hello, world!")
 
@@ -66,21 +68,12 @@ package tech.bts.javareview.simpleprogram
 
         printHello("Peter", 30)
 
-        val p =power(2.0, 10)
+        val p =MathUtilKotlin.power(2.0, 10)
         println("2*10 = $p")
 
     }
 
-fun power(base: Double, exponent: Int) : Double {
 
-    var result = 1.0
-
-    for (i in 1..exponent) {
-        result *= base
-    }
-
-    return result
-}
 
 fun printHello(name: String, age: Int) {
 

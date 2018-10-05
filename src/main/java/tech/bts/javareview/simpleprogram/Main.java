@@ -1,5 +1,7 @@
 package tech.bts.javareview.simpleprogram;
 
+import tech.bts.javareview.simpleprogram.classes.MathUtil;
+
 import java.util.*;
 
 public class Main {
@@ -65,7 +67,7 @@ public class Main {
         printHello("john", 25);
         printHello("Maria", 31);
 
-        final double p = power(2, 10);
+        final double p = MathUtil.power(2, 10);
         System.out.println("2*10 = " + p);
     }
 
