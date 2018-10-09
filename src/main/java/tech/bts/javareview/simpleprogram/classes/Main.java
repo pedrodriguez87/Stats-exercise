@@ -8,8 +8,6 @@ public class Main {
 
         calc.add(100);
         calc.clear();
-
-
         calc.add(7);
         calc.add(3);
         calc.add(5);
