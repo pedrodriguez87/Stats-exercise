@@ -2,23 +2,23 @@ package tech.bts.javareview.simpleprogram.classes;
 
 public class Stats {
 
-    private double Sum;
-    private double Count;
-    private double Average;
-    private double Max = Double.MIN_VALUE;
-    private double Min = Double.MAX_VALUE;
+    private double sum;
+    private double count;
+    private double average;
+    private double max = Double.MIN_VALUE;
+    private double min = Double.MAX_VALUE;
 
 
     public void add(double number) {
-        this.Sum += number;
-        this.Count++;
-        this.Average = Sum/Count;
+        this.sum += number;
+        this.count++;
+        this.average = sum/count;
 
-        if (number > Max){
-            this.Max = number;
+        if (number > max){
+            this.max = number;
         }
-        if (number < Min){
-            this.Min = number;
+        if (number < min){
+            this.min = number;
         }
 
 
@@ -31,22 +31,22 @@ public class Stats {
     }
 
     public double getSum() {
-        return Sum;
+        return sum;
     }
 
     public double getCount() {
-        return Count;
+        return count;
     }
 
     public double getAverage() {
-        return Average;
+        return average;
     }
 
     public double getMax() {
-        return Max;
+        return max;
     }
 
     public double getMin() {
-        return Min;
+        return min;
     }
 }
